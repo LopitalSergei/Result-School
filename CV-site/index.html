@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="cv, html, css">
+	<meta name="description" content="This is a resume website created by Sergey Laptev">
+	<link rel="stylesheet" href="style.css">
+	<title>Laptev Sergey CV</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="info">
+			<img class="avatar" src="img/photo.jpg" alt="Avatar img">
+			<div class="info-text">
+				<h1>Сергей Лаптев</h1>
+				<p>Я <strong>ученик</strong> школы по программированию <strong>Result School</strong>.</p>
+				<p>Я люблю <em>программировать</em> и хочу начать <em>зарабатывать</em> этим.</p>
+			</div>
+		</div>
+		<div class="card sites">
+			<h2>Список социальных сетей</h2>
+			<a href="https://t.me/Lopital" target="_blank">Telegram</a> |
+			<a href="https://instagram.com/lopital_s" target="_blank">Instagram</a> |
+			<a href="https://vk.com/lopital_s" target="_blank">VKontakte</a>
+		</div>
+		<div class="card hobbys">
+			<h2>Мои хобби</h2>
+			<ul class="hobbys__list">
+				<li>Настольные игры</li>
+				<li>Видео игры</li>
+				<li>Сериалы</li>
+				<li>Спорт</li>
+				<li>Путешествия</li>
+			</ul>
+		</div>
+		<div class="card work-exp">
+			<h2>Опыт работы</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Название организации</th>
+						<th>Должность</th>
+						<th>Год</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>КУП "Новополоцкий центр предпринимательства и недвижимости"</td>
+						<td>Ведущий инженер-программист</td>
+						<td>2022 - сейчас</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="card contact-me">
+			<h2>Связаться со мной</h2>
+			<form action="/">
+				<div class="form-row">
+					<div class="form-group name">
+						<label for="name">Ваше имя:</label>
+						<br>
+						<input type="text" id="name" placeholder="Введите имя">
+					</div>
+
+					<div class="form-group email">
+						<label for="email">Ваш email:</label>
+						<br>
+						<input type="email" id="email" placeholder="Введите email">
+					</div>
+				</div>
+
+				<div class="form-group message">
+					<label for="message">Ваше сообщение:</label>
+					<br>
+					<textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+				</div>
+
+				<div><button class="btn" type="submit">Отправить!</button></div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

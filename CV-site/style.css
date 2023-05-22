@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #0f141e;
+	background: #f1f1f1;
+}
+
+a {
+	color: cadetblue;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: rgb(28, 127, 131);
+}
+
+a:active {
+	color: rgb(0, 81, 85);
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.avatar {
+	width: 200px;
+	box-shadow: 5px 5px 20px black;
+	border-radius: 20px;
+
+	margin-right: 40px;
+}
+
+.info {
+	margin-bottom: 10px;
+}
+
+.info-text {
+	display: inline-block;
+}
+
+.info-text p {
+	font-style: italic;
+}
+
+.card {
+	background: #ecffbd;
+	border: 2px solid greenyellow;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+
+.card h2 {
+	margin: 5px 0 10px;
+}
+
+.hobbys__list li {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.hobbys__list li:last-child {
+	margin-bottom: 0;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th {
+	padding: 10px 5px;
+	border-bottom: 2px solid black;
+}
+
+.table td {
+	padding: 10px 5px;
+}
+
+.form-group label {
+	font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+	background: transparent;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 5px;
+	outline: none;
+	font-family: inherit;
+}
+
+.form-row {
+	margin-bottom: 10px;
+	display: flex;
+}
+
+.form-row .form-group {
+	display: inline-block;
+	margin-right: 10px;
+	width: 50%
+}
+
+.form-row .form-group:last-child {
+	margin-right: 0;
+}
+
+.btn {
+	cursor: pointer;
+	font-family: inherit;
+	padding: 10px 40px;
+	border: none;
+	border-radius: 5px;
+	background: cadetblue;
+	color: #fff;
+	font-size: 16px;
+}
+
+.btn:hover {
+	background: rgb(28, 127, 131);
+}
+
+.btn:active {
+	background: rgb(0, 81, 85);
+}
+
+@media (max-width: 500px) {
+	.info {
+		text-align: center;
+	}
+
+	.form-row {
+		flex-direction: column;
+	}
+
+	.form-row .form-group {
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.table td {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 400px) {
+	.table td {
+		font-size: 12px;
+	}
+}
